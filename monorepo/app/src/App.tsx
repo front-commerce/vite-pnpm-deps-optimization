@@ -1,4 +1,5 @@
 import HelloWorld from "@test-pkg/hello-world";
+import CoucouMonde from "coucou-monde";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -28,6 +29,7 @@ function App() {
           </p>
         </div>
       </div>
+      <CoucouMonde />
       <HelloWorld />
     </>
   );

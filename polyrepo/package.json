@@ -14,7 +14,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@test-pkg/hello-world": "file:../monorepo/packages/hello-world"
+    "@test-pkg/hello-world": "file:../monorepo/packages/hello-world",
+    "coucou-monde": "file:../monorepo/packages/coucou-monde"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

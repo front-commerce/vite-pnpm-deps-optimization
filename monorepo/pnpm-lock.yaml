@@ -11,6 +11,9 @@ importers:
       '@test-pkg/hello-world':
         specifier: workspace:*
         version: link:../packages/hello-world
+      coucou-monde:
+        specifier: workspace:*
+        version: link:../packages/coucou-monde
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -48,6 +51,22 @@ importers:
       vite:
         specifier: ^5.2.0
         version: 5.2.6
+
+  packages/coucou-monde:
+    dependencies:
+      object-path:
+        specifier: ^0.11.8
+        version: 0.11.8
+    devDependencies:
+      '@types/object-path':
+        specifier: ^0.11.4
+        version: 0.11.4
+      '@types/react':
+        specifier: ^18.2.20
+        version: 18.2.66
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
 
   packages/hello-world:
     dependencies:

@@ -8,6 +8,9 @@ dependencies:
   '@test-pkg/hello-world':
     specifier: file:../monorepo/packages/hello-world
     version: file:../monorepo/packages/hello-world(react@18.2.0)
+  coucou-monde:
+    specifier: file:../monorepo/packages/coucou-monde
+    version: file:../monorepo/packages/coucou-monde(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1938,6 +1941,17 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  file:../monorepo/packages/coucou-monde(react@18.2.0):
+    resolution: {directory: ../monorepo/packages/coucou-monde, type: directory}
+    id: file:../monorepo/packages/coucou-monde
+    name: coucou-monde
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      object-path: 0.11.8
+      react: 18.2.0
+    dev: false
 
   file:../monorepo/packages/hello-world(react@18.2.0):
     resolution: {directory: ../monorepo/packages/hello-world, type: directory}
