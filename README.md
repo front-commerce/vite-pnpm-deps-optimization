@@ -2,6 +2,8 @@
 
 ### Issue Overview
 
+https://github.com/vitejs/vite/issues/16293
+
 There seems to be an issue with the optimization of the `object-path` package when using `pnpm` as the package manager, specifically in a polyrepo setup. This problem does not occur when using `npm`, indicating a potential discrepancy in how dependencies are handled between these package managers.
 
 ### Steps to Reproduce
