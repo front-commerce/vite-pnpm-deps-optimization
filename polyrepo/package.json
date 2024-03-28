@@ -5,16 +5,19 @@
   "type": "module",
   "scripts": {
     "dev:npm": "rm -rf node_modules && npm i && vite",
-    "dev:pnpm": "rm -rf node_modules && pnpm i && vite",
+    "dev:pnpm": "rm -rf node_modules && pnpm i --shamefully-hoist && vite",
     "build:npm": "rm -rf node_modules && npm i && vite build",
     "build:pnpm": "rm -rf node_modules && pnpm i && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@test-pkg/acme-world": "file:../monorepo/packages/acme-world",
+    "@test-pkg/hello-world": "file:../monorepo/packages/hello-world",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@test-pkg/hello-world": "file:../monorepo/packages/hello-world"
+    "tsconfck": "^3.0.3",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

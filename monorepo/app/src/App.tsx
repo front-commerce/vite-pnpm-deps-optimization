@@ -1,8 +1,9 @@
-import HelloWorld from "@test-pkg/hello-world";
+import HelloWorld from "@test-pkg/acme-world";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import config from "~/config";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,8 @@ function App() {
           </p>
         </div>
       </div>
+      <h3>Alias Config From Root</h3>
+      <pre>{JSON.stringify(config, null, 2)}</pre>
       <HelloWorld />
     </>
   );
